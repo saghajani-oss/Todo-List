@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: coral;
+  color: white;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 30px;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 16px;
+  border: none;
+  font-size: 20px;
+  background-color: white;
+}
+
+form button {
+  color: coral;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+form button:hover {
+  color: white;
+  background-color: coral;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo {
+  margin: 8px;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.7s ease;
+}
+
+.todo li {
+  flex: 1;
+  padding-left: 8px;
+}
+
+.trash-btn,
+.complete-btn {
+    background-color: rgb(255, 95, 37);
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.complete-btn {
+    background-color: rgb(49, 150, 49);
+}
+
+.fa-trash, .fa-check {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall {
+    transform: translateX(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
